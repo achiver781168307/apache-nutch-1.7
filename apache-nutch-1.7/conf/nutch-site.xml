@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+	<property> 
+    <name>http.agent.name</name> 
+    <value>nutch-1.7</value>
+    <!--<value>111</value>-->
+  </property> 
+  <property>  
+ 	  <name>parser.skip.truncated</name>  
+  	<value>false</value>  
+	</property> 
+	<property>  
+	  <name>http.agent.description</name>  
+	  <value>tjtnutchhoho</value>  
+	  <description></description>  
+	</property> 
+	<property>  
+  <name>http.agent.url</name>  
+	  <value>http://ucooper.com</value>  
+	  <description></description>  
+	</property>  
+	<property>  
+	  <name>http.agent.email</name>  
+	  <value>tangjiutao@gmail.com</value>  
+	  <description></description>  
+	</property>
+</configuration>

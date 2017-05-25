@@ -1,0 +1,804 @@
+2016-07-21 09:26:44,353 INFO  crawl.Crawl - crawl started in: crawl-20160721092643
+2016-07-21 09:26:44,355 INFO  crawl.Crawl - rootUrlDir = urls
+2016-07-21 09:26:44,355 INFO  crawl.Crawl - threads = 10
+2016-07-21 09:26:44,355 INFO  crawl.Crawl - depth = 3
+2016-07-21 09:26:44,355 INFO  crawl.Crawl - solrUrl=http://127.0.0.1:8082/solr/core1
+2016-07-21 09:26:44,355 INFO  crawl.Crawl - topN = 5
+2016-07-21 09:26:44,381 INFO  crawl.Injector - Injector: starting at 2016-07-21 09:26:44
+2016-07-21 09:26:44,381 INFO  crawl.Injector - Injector: crawlDb: crawl-20160721092643/crawldb
+2016-07-21 09:26:44,381 INFO  crawl.Injector - Injector: urlDir: urls
+2016-07-21 09:26:44,382 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2016-07-21 09:26:44,529 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2016-07-21 09:26:44,618 WARN  snappy.LoadSnappy - Snappy native library not loaded
+2016-07-21 09:26:45,564 INFO  regex.RegexURLNormalizer - can't find rules for scope 'inject', using default
+2016-07-21 09:26:46,058 INFO  crawl.Injector - Injector: total number of urls rejected by filters: 0
+2016-07-21 09:26:46,059 INFO  crawl.Injector - Injector: total number of urls injected after normalization and filtering: 1
+2016-07-21 09:26:46,059 INFO  crawl.Injector - Injector: Merging injected urls into crawl db.
+2016-07-21 09:26:47,189 INFO  crawl.Injector - Injector: finished at 2016-07-21 09:26:47, elapsed: 00:00:02
+2016-07-21 09:26:47,191 INFO  crawl.Generator - Generator: starting at 2016-07-21 09:26:47
+2016-07-21 09:26:47,191 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2016-07-21 09:26:47,192 INFO  crawl.Generator - Generator: filtering: true
+2016-07-21 09:26:47,192 INFO  crawl.Generator - Generator: normalizing: true
+2016-07-21 09:26:47,192 INFO  crawl.Generator - Generator: topN: 5
+2016-07-21 09:26:47,193 INFO  crawl.Generator - Generator: jobtracker is 'local', generating exactly one partition.
+2016-07-21 09:26:47,389 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2016-07-21 09:26:47,389 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2016-07-21 09:26:47,389 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2016-07-21 09:26:47,403 INFO  regex.RegexURLNormalizer - can't find rules for scope 'partition', using default
+2016-07-21 09:26:47,423 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2016-07-21 09:26:47,423 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2016-07-21 09:26:47,423 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2016-07-21 09:26:47,426 INFO  regex.RegexURLNormalizer - can't find rules for scope 'generate_host_count', using default
+2016-07-21 09:26:48,276 INFO  crawl.Generator - Generator: Partitioning selected urls for politeness.
+2016-07-21 09:26:49,279 INFO  crawl.Generator - Generator: segment: crawl-20160721092643/segments/20160721092649
+2016-07-21 09:26:49,440 INFO  regex.RegexURLNormalizer - can't find rules for scope 'partition', using default
+2016-07-21 09:26:50,354 INFO  crawl.Generator - Generator: finished at 2016-07-21 09:26:50, elapsed: 00:00:03
+2016-07-21 09:26:50,354 WARN  fetcher.Fetcher - Fetcher: Your 'http.agent.name' value should be listed first in 'http.robots.agents' property.
+2016-07-21 09:26:50,354 INFO  fetcher.Fetcher - Fetcher: starting at 2016-07-21 09:26:50
+2016-07-21 09:26:50,354 INFO  fetcher.Fetcher - Fetcher: segment: crawl-20160721092643/segments/20160721092649
+2016-07-21 09:26:50,576 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:26:50,576 INFO  fetcher.Fetcher - Fetcher: threads: 10
+2016-07-21 09:26:50,576 INFO  fetcher.Fetcher - Fetcher: time-out divisor: 2
+2016-07-21 09:26:50,580 INFO  fetcher.Fetcher - QueueFeeder finished: total 1 records + hit by time limit :0
+2016-07-21 09:26:50,602 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:26:50,603 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:26:50,603 INFO  fetcher.Fetcher - fetching http://www.huxiu.com/ (queue crawl delay=5000ms)
+2016-07-21 09:26:50,604 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2016-07-21 09:26:50,604 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:26:50,604 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2016-07-21 09:26:50,604 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:26:50,605 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2016-07-21 09:26:50,605 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:26:50,605 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2016-07-21 09:26:50,606 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:26:50,606 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2016-07-21 09:26:50,606 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:26:50,607 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2016-07-21 09:26:50,607 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:26:50,607 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2016-07-21 09:26:50,607 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:26:50,608 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2016-07-21 09:26:50,608 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:26:50,608 INFO  fetcher.Fetcher - Fetcher: throughput threshold: -1
+2016-07-21 09:26:50,608 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2016-07-21 09:26:50,608 INFO  fetcher.Fetcher - Fetcher: throughput threshold retries: 5
+2016-07-21 09:26:50,623 ERROR protocol.RobotRulesParser - Agent we advertise (nutch-1.7) not listed first in 'http.robots.agents' property!
+2016-07-21 09:26:50,623 INFO  http.Http - http.proxy.host = null
+2016-07-21 09:26:50,624 INFO  http.Http - http.proxy.port = 8080
+2016-07-21 09:26:50,624 INFO  http.Http - http.timeout = 10000
+2016-07-21 09:26:50,624 INFO  http.Http - http.content.limit = 65536
+2016-07-21 09:26:50,624 INFO  http.Http - http.agent = nutch-1.7/Nutch-1.7 (tjtnutchhoho; http://ucooper.com; tangjiutao@gmail.com)
+2016-07-21 09:26:50,624 INFO  http.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2016-07-21 09:26:50,624 INFO  http.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2016-07-21 09:26:51,551 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=0
+2016-07-21 09:26:51,617 INFO  fetcher.Fetcher - -activeThreads=0, spinWaiting=0, fetchQueues.totalSize=0
+2016-07-21 09:26:51,617 INFO  fetcher.Fetcher - -activeThreads=0
+2016-07-21 09:26:52,453 INFO  fetcher.Fetcher - Fetcher: finished at 2016-07-21 09:26:52, elapsed: 00:00:02
+2016-07-21 09:26:52,454 INFO  parse.ParseSegment - ParseSegment: starting at 2016-07-21 09:26:52
+2016-07-21 09:26:52,454 INFO  parse.ParseSegment - ParseSegment: segment: crawl-20160721092643/segments/20160721092649
+2016-07-21 09:26:53,305 INFO  crawl.SignatureFactory - Using Signature impl: org.apache.nutch.crawl.MD5Signature
+2016-07-21 09:26:53,319 INFO  parse.ParseSegment - Parsed (18ms):http://www.huxiu.com/
+2016-07-21 09:26:53,371 INFO  regex.RegexURLNormalizer - can't find rules for scope 'outlink', using default
+2016-07-21 09:26:54,517 INFO  parse.ParseSegment - ParseSegment: finished at 2016-07-21 09:26:54, elapsed: 00:00:02
+2016-07-21 09:26:54,520 INFO  crawl.CrawlDb - CrawlDb update: starting at 2016-07-21 09:26:54
+2016-07-21 09:26:54,520 INFO  crawl.CrawlDb - CrawlDb update: db: crawl-20160721092643/crawldb
+2016-07-21 09:26:54,520 INFO  crawl.CrawlDb - CrawlDb update: segments: [crawl-20160721092643/segments/20160721092649]
+2016-07-21 09:26:54,520 INFO  crawl.CrawlDb - CrawlDb update: additions allowed: true
+2016-07-21 09:26:54,520 INFO  crawl.CrawlDb - CrawlDb update: URL normalizing: true
+2016-07-21 09:26:54,520 INFO  crawl.CrawlDb - CrawlDb update: URL filtering: true
+2016-07-21 09:26:54,520 INFO  crawl.CrawlDb - CrawlDb update: 404 purging: false
+2016-07-21 09:26:54,521 INFO  crawl.CrawlDb - CrawlDb update: Merging segment data into db.
+2016-07-21 09:26:54,925 INFO  regex.RegexURLNormalizer - can't find rules for scope 'crawldb', using default
+2016-07-21 09:26:55,086 INFO  regex.RegexURLNormalizer - can't find rules for scope 'crawldb', using default
+2016-07-21 09:26:55,183 INFO  regex.RegexURLNormalizer - can't find rules for scope 'crawldb', using default
+2016-07-21 09:26:55,201 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2016-07-21 09:26:55,201 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2016-07-21 09:26:55,201 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2016-07-21 09:26:55,625 INFO  crawl.CrawlDb - CrawlDb update: finished at 2016-07-21 09:26:55, elapsed: 00:00:01
+2016-07-21 09:26:55,627 INFO  crawl.Generator - Generator: starting at 2016-07-21 09:26:55
+2016-07-21 09:26:55,627 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2016-07-21 09:26:55,627 INFO  crawl.Generator - Generator: filtering: true
+2016-07-21 09:26:55,627 INFO  crawl.Generator - Generator: normalizing: true
+2016-07-21 09:26:55,627 INFO  crawl.Generator - Generator: topN: 5
+2016-07-21 09:26:55,627 INFO  crawl.Generator - Generator: jobtracker is 'local', generating exactly one partition.
+2016-07-21 09:26:55,727 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2016-07-21 09:26:55,728 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2016-07-21 09:26:55,728 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2016-07-21 09:26:55,729 INFO  regex.RegexURLNormalizer - can't find rules for scope 'partition', using default
+2016-07-21 09:26:55,767 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2016-07-21 09:26:55,767 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2016-07-21 09:26:55,767 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2016-07-21 09:26:55,768 INFO  regex.RegexURLNormalizer - can't find rules for scope 'generate_host_count', using default
+2016-07-21 09:26:56,667 INFO  crawl.Generator - Generator: Partitioning selected urls for politeness.
+2016-07-21 09:26:57,669 INFO  crawl.Generator - Generator: segment: crawl-20160721092643/segments/20160721092657
+2016-07-21 09:26:57,753 INFO  regex.RegexURLNormalizer - can't find rules for scope 'partition', using default
+2016-07-21 09:26:58,703 INFO  crawl.Generator - Generator: finished at 2016-07-21 09:26:58, elapsed: 00:00:03
+2016-07-21 09:26:58,703 WARN  fetcher.Fetcher - Fetcher: Your 'http.agent.name' value should be listed first in 'http.robots.agents' property.
+2016-07-21 09:26:58,703 INFO  fetcher.Fetcher - Fetcher: starting at 2016-07-21 09:26:58
+2016-07-21 09:26:58,703 INFO  fetcher.Fetcher - Fetcher: segment: crawl-20160721092643/segments/20160721092657
+2016-07-21 09:26:58,830 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:26:58,830 INFO  fetcher.Fetcher - Fetcher: threads: 10
+2016-07-21 09:26:58,830 INFO  fetcher.Fetcher - Fetcher: time-out divisor: 2
+2016-07-21 09:26:58,831 INFO  fetcher.Fetcher - QueueFeeder finished: total 5 records + hit by time limit :0
+2016-07-21 09:26:58,834 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:26:58,835 INFO  fetcher.Fetcher - fetching http://www.huxiu.com/article/156854/1.html (queue crawl delay=5000ms)
+2016-07-21 09:26:58,835 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:26:58,835 ERROR protocol.RobotRulesParser - Agent we advertise (nutch-1.7) not listed first in 'http.robots.agents' property!
+2016-07-21 09:26:58,835 INFO  http.Http - http.proxy.host = null
+2016-07-21 09:26:58,835 INFO  http.Http - http.proxy.port = 8080
+2016-07-21 09:26:58,835 INFO  http.Http - http.timeout = 10000
+2016-07-21 09:26:58,835 INFO  http.Http - http.content.limit = 65536
+2016-07-21 09:26:58,835 INFO  http.Http - http.agent = nutch-1.7/Nutch-1.7 (tjtnutchhoho; http://ucooper.com; tangjiutao@gmail.com)
+2016-07-21 09:26:58,835 INFO  http.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2016-07-21 09:26:58,835 INFO  fetcher.Fetcher - fetching http://www.bloomberg.com/news/articles/2016-07-20/uber-investors-said-to-push-for-didi-truce-in-costly-china-fight (queue crawl delay=5000ms)
+2016-07-21 09:26:58,835 INFO  http.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2016-07-21 09:26:58,835 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:26:58,836 ERROR protocol.RobotRulesParser - Agent we advertise (nutch-1.7) not listed first in 'http.robots.agents' property!
+2016-07-21 09:26:58,836 INFO  http.Http - http.proxy.host = null
+2016-07-21 09:26:58,836 INFO  http.Http - http.proxy.port = 8080
+2016-07-21 09:26:58,836 INFO  http.Http - http.timeout = 10000
+2016-07-21 09:26:58,836 INFO  http.Http - http.content.limit = 65536
+2016-07-21 09:26:58,836 INFO  http.Http - http.agent = nutch-1.7/Nutch-1.7 (tjtnutchhoho; http://ucooper.com; tangjiutao@gmail.com)
+2016-07-21 09:26:58,836 INFO  http.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2016-07-21 09:26:58,836 INFO  http.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2016-07-21 09:26:58,836 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:26:58,836 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:26:58,837 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:26:58,837 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:26:58,838 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:26:58,838 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:26:58,838 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:26:58,839 INFO  fetcher.Fetcher - Fetcher: throughput threshold: -1
+2016-07-21 09:26:58,839 INFO  fetcher.Fetcher - Fetcher: throughput threshold retries: 5
+2016-07-21 09:26:59,840 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=3
+2016-07-21 09:26:59,840 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:26:59,840 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:26:59,840 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:26:59,840 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:26:59,840 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:26:59,840 INFO  fetcher.Fetcher -   nextFetchTime = 1469064424396
+2016-07-21 09:26:59,840 INFO  fetcher.Fetcher -   now           = 1469064419840
+2016-07-21 09:26:59,841 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/whatsnew.html
+2016-07-21 09:26:59,841 INFO  fetcher.Fetcher -   1. http://www.huxiu.com/startups.html
+2016-07-21 09:26:59,841 INFO  fetcher.Fetcher -   2. http://www.huxiu.com/entertainment.html
+2016-07-21 09:27:00,845 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=3
+2016-07-21 09:27:00,846 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:00,846 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:00,846 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:00,846 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:00,846 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:00,846 INFO  fetcher.Fetcher -   nextFetchTime = 1469064424396
+2016-07-21 09:27:00,846 INFO  fetcher.Fetcher -   now           = 1469064420846
+2016-07-21 09:27:00,846 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/whatsnew.html
+2016-07-21 09:27:00,847 INFO  fetcher.Fetcher -   1. http://www.huxiu.com/startups.html
+2016-07-21 09:27:00,847 INFO  fetcher.Fetcher -   2. http://www.huxiu.com/entertainment.html
+2016-07-21 09:27:01,851 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=3
+2016-07-21 09:27:01,851 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:01,851 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:01,851 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:01,851 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:01,851 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:01,851 INFO  fetcher.Fetcher -   nextFetchTime = 1469064424396
+2016-07-21 09:27:01,851 INFO  fetcher.Fetcher -   now           = 1469064421851
+2016-07-21 09:27:01,851 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/whatsnew.html
+2016-07-21 09:27:01,851 INFO  fetcher.Fetcher -   1. http://www.huxiu.com/startups.html
+2016-07-21 09:27:01,851 INFO  fetcher.Fetcher -   2. http://www.huxiu.com/entertainment.html
+2016-07-21 09:27:02,853 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=3
+2016-07-21 09:27:02,853 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:02,853 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:02,853 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:02,854 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:02,854 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:02,854 INFO  fetcher.Fetcher -   nextFetchTime = 1469064424396
+2016-07-21 09:27:02,854 INFO  fetcher.Fetcher -   now           = 1469064422854
+2016-07-21 09:27:02,854 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/whatsnew.html
+2016-07-21 09:27:02,854 INFO  fetcher.Fetcher -   1. http://www.huxiu.com/startups.html
+2016-07-21 09:27:02,854 INFO  fetcher.Fetcher -   2. http://www.huxiu.com/entertainment.html
+2016-07-21 09:27:03,855 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=3
+2016-07-21 09:27:03,856 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:03,856 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:03,856 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:03,856 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:03,856 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:03,856 INFO  fetcher.Fetcher -   nextFetchTime = 1469064424396
+2016-07-21 09:27:03,856 INFO  fetcher.Fetcher -   now           = 1469064423856
+2016-07-21 09:27:03,856 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/whatsnew.html
+2016-07-21 09:27:03,856 INFO  fetcher.Fetcher -   1. http://www.huxiu.com/startups.html
+2016-07-21 09:27:03,856 INFO  fetcher.Fetcher -   2. http://www.huxiu.com/entertainment.html
+2016-07-21 09:27:04,421 INFO  fetcher.Fetcher - fetching http://www.huxiu.com/whatsnew.html (queue crawl delay=5000ms)
+2016-07-21 09:27:04,859 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=8, fetchQueues.totalSize=2
+2016-07-21 09:27:04,859 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:04,859 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:04,859 INFO  fetcher.Fetcher -   inProgress    = 1
+2016-07-21 09:27:04,859 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:04,859 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:04,859 INFO  fetcher.Fetcher -   nextFetchTime = 1469064424396
+2016-07-21 09:27:04,859 INFO  fetcher.Fetcher -   now           = 1469064424859
+2016-07-21 09:27:04,860 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/startups.html
+2016-07-21 09:27:04,860 INFO  fetcher.Fetcher -   1. http://www.huxiu.com/entertainment.html
+2016-07-21 09:27:05,864 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=2
+2016-07-21 09:27:05,864 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:05,864 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:05,864 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:05,864 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:05,864 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:05,864 INFO  fetcher.Fetcher -   nextFetchTime = 1469064430310
+2016-07-21 09:27:05,864 INFO  fetcher.Fetcher -   now           = 1469064425864
+2016-07-21 09:27:05,864 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/startups.html
+2016-07-21 09:27:05,865 INFO  fetcher.Fetcher -   1. http://www.huxiu.com/entertainment.html
+2016-07-21 09:27:06,869 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=2
+2016-07-21 09:27:06,869 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:06,869 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:06,869 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:06,869 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:06,869 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:06,869 INFO  fetcher.Fetcher -   nextFetchTime = 1469064430310
+2016-07-21 09:27:06,870 INFO  fetcher.Fetcher -   now           = 1469064426870
+2016-07-21 09:27:06,870 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/startups.html
+2016-07-21 09:27:06,870 INFO  fetcher.Fetcher -   1. http://www.huxiu.com/entertainment.html
+2016-07-21 09:27:07,873 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=2
+2016-07-21 09:27:07,873 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:07,874 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:07,874 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:07,874 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:07,874 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:07,874 INFO  fetcher.Fetcher -   nextFetchTime = 1469064430310
+2016-07-21 09:27:07,874 INFO  fetcher.Fetcher -   now           = 1469064427874
+2016-07-21 09:27:07,874 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/startups.html
+2016-07-21 09:27:07,874 INFO  fetcher.Fetcher -   1. http://www.huxiu.com/entertainment.html
+2016-07-21 09:27:08,880 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=2
+2016-07-21 09:27:08,880 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:08,880 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:08,880 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:08,880 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:08,880 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:08,880 INFO  fetcher.Fetcher -   nextFetchTime = 1469064430310
+2016-07-21 09:27:08,880 INFO  fetcher.Fetcher -   now           = 1469064428880
+2016-07-21 09:27:08,880 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/startups.html
+2016-07-21 09:27:08,881 INFO  fetcher.Fetcher -   1. http://www.huxiu.com/entertainment.html
+2016-07-21 09:27:09,483 INFO  api.HttpRobotRulesParser - Couldn't get robots.txt for http://www.bloomberg.com/news/articles/2016-07-20/uber-investors-said-to-push-for-didi-truce-in-costly-china-fight: java.net.SocketTimeoutException: connect timed out
+2016-07-21 09:27:09,885 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=2
+2016-07-21 09:27:09,885 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:09,885 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:09,885 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:09,885 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:09,885 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:09,885 INFO  fetcher.Fetcher -   nextFetchTime = 1469064430310
+2016-07-21 09:27:09,885 INFO  fetcher.Fetcher -   now           = 1469064429885
+2016-07-21 09:27:09,885 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/startups.html
+2016-07-21 09:27:09,886 INFO  fetcher.Fetcher -   1. http://www.huxiu.com/entertainment.html
+2016-07-21 09:27:10,346 INFO  fetcher.Fetcher - fetching http://www.huxiu.com/startups.html (queue crawl delay=5000ms)
+2016-07-21 09:27:10,888 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=8, fetchQueues.totalSize=1
+2016-07-21 09:27:10,888 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:10,888 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:10,888 INFO  fetcher.Fetcher -   inProgress    = 1
+2016-07-21 09:27:10,888 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:10,888 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:10,888 INFO  fetcher.Fetcher -   nextFetchTime = 1469064430310
+2016-07-21 09:27:10,889 INFO  fetcher.Fetcher -   now           = 1469064430889
+2016-07-21 09:27:10,889 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/entertainment.html
+2016-07-21 09:27:11,894 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=1
+2016-07-21 09:27:11,894 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:11,894 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:11,894 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:11,894 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:11,894 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:11,894 INFO  fetcher.Fetcher -   nextFetchTime = 1469064435907
+2016-07-21 09:27:11,894 INFO  fetcher.Fetcher -   now           = 1469064431894
+2016-07-21 09:27:11,894 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/entertainment.html
+2016-07-21 09:27:12,898 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=1
+2016-07-21 09:27:12,899 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:12,899 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:12,899 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:12,899 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:12,899 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:12,899 INFO  fetcher.Fetcher -   nextFetchTime = 1469064435907
+2016-07-21 09:27:12,899 INFO  fetcher.Fetcher -   now           = 1469064432899
+2016-07-21 09:27:12,899 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/entertainment.html
+2016-07-21 09:27:13,904 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=1
+2016-07-21 09:27:13,904 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:13,904 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:13,904 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:13,904 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:13,904 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:13,904 INFO  fetcher.Fetcher -   nextFetchTime = 1469064435907
+2016-07-21 09:27:13,904 INFO  fetcher.Fetcher -   now           = 1469064433904
+2016-07-21 09:27:13,905 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/entertainment.html
+2016-07-21 09:27:14,909 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=1
+2016-07-21 09:27:14,909 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:14,909 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:14,909 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:14,909 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:14,909 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:14,909 INFO  fetcher.Fetcher -   nextFetchTime = 1469064435907
+2016-07-21 09:27:14,909 INFO  fetcher.Fetcher -   now           = 1469064434909
+2016-07-21 09:27:14,909 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/entertainment.html
+2016-07-21 09:27:15,913 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=1
+2016-07-21 09:27:15,913 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:15,914 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:15,914 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:15,914 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:15,914 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:15,914 INFO  fetcher.Fetcher -   nextFetchTime = 1469064435907
+2016-07-21 09:27:15,914 INFO  fetcher.Fetcher -   now           = 1469064435914
+2016-07-21 09:27:15,914 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/entertainment.html
+2016-07-21 09:27:15,939 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=8
+2016-07-21 09:27:15,939 INFO  fetcher.Fetcher - fetching http://www.huxiu.com/entertainment.html (queue crawl delay=5000ms)
+2016-07-21 09:27:15,940 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=6
+2016-07-21 09:27:15,940 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=5
+2016-07-21 09:27:15,940 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=4
+2016-07-21 09:27:15,940 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=3
+2016-07-21 09:27:15,940 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=7
+2016-07-21 09:27:15,940 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=2
+2016-07-21 09:27:15,939 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=8
+2016-07-21 09:27:16,696 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2016-07-21 09:27:16,917 INFO  fetcher.Fetcher - -activeThreads=1, spinWaiting=0, fetchQueues.totalSize=0
+2016-07-21 09:27:17,920 INFO  fetcher.Fetcher - -activeThreads=1, spinWaiting=0, fetchQueues.totalSize=0
+2016-07-21 09:27:18,923 INFO  fetcher.Fetcher - -activeThreads=1, spinWaiting=0, fetchQueues.totalSize=0
+2016-07-21 09:27:19,488 ERROR http.Http - Failed to get protocol output
+java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.nutch.protocol.http.HttpResponse.<init>(HttpResponse.java:95)
+	at org.apache.nutch.protocol.http.Http.getResponse(Http.java:64)
+	at org.apache.nutch.protocol.http.api.HttpBase.getProtocolOutput(HttpBase.java:140)
+	at org.apache.nutch.fetcher.Fetcher$FetcherThread.run(Fetcher.java:703)
+2016-07-21 09:27:19,490 INFO  fetcher.Fetcher - fetch of http://www.bloomberg.com/news/articles/2016-07-20/uber-investors-said-to-push-for-didi-truce-in-costly-china-fight failed with: java.net.SocketTimeoutException: connect timed out
+2016-07-21 09:27:19,490 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=0
+2016-07-21 09:27:19,926 INFO  fetcher.Fetcher - -activeThreads=0, spinWaiting=0, fetchQueues.totalSize=0
+2016-07-21 09:27:19,926 INFO  fetcher.Fetcher - -activeThreads=0
+2016-07-21 09:27:20,811 INFO  fetcher.Fetcher - Fetcher: finished at 2016-07-21 09:27:20, elapsed: 00:00:22
+2016-07-21 09:27:20,811 INFO  parse.ParseSegment - ParseSegment: starting at 2016-07-21 09:27:20
+2016-07-21 09:27:20,811 INFO  parse.ParseSegment - ParseSegment: segment: crawl-20160721092643/segments/20160721092657
+2016-07-21 09:27:21,046 INFO  crawl.SignatureFactory - Using Signature impl: org.apache.nutch.crawl.MD5Signature
+2016-07-21 09:27:21,049 INFO  parse.ParseSegment - Parsed (3ms):http://www.huxiu.com/article/156854/1.html
+2016-07-21 09:27:21,124 INFO  parse.ParseSegment - Parsed (5ms):http://www.huxiu.com/entertainment.html
+2016-07-21 09:27:21,204 INFO  parse.ParseSegment - Parsed (5ms):http://www.huxiu.com/startups.html
+2016-07-21 09:27:21,267 INFO  parse.ParseSegment - Parsed (5ms):http://www.huxiu.com/whatsnew.html
+2016-07-21 09:27:21,297 INFO  regex.RegexURLNormalizer - can't find rules for scope 'outlink', using default
+2016-07-21 09:27:21,841 INFO  parse.ParseSegment - ParseSegment: finished at 2016-07-21 09:27:21, elapsed: 00:00:01
+2016-07-21 09:27:21,844 INFO  crawl.CrawlDb - CrawlDb update: starting at 2016-07-21 09:27:21
+2016-07-21 09:27:21,844 INFO  crawl.CrawlDb - CrawlDb update: db: crawl-20160721092643/crawldb
+2016-07-21 09:27:21,844 INFO  crawl.CrawlDb - CrawlDb update: segments: [crawl-20160721092643/segments/20160721092657]
+2016-07-21 09:27:21,844 INFO  crawl.CrawlDb - CrawlDb update: additions allowed: true
+2016-07-21 09:27:21,844 INFO  crawl.CrawlDb - CrawlDb update: URL normalizing: true
+2016-07-21 09:27:21,844 INFO  crawl.CrawlDb - CrawlDb update: URL filtering: true
+2016-07-21 09:27:21,844 INFO  crawl.CrawlDb - CrawlDb update: 404 purging: false
+2016-07-21 09:27:21,844 INFO  crawl.CrawlDb - CrawlDb update: Merging segment data into db.
+2016-07-21 09:27:21,925 INFO  regex.RegexURLNormalizer - can't find rules for scope 'crawldb', using default
+2016-07-21 09:27:22,049 INFO  regex.RegexURLNormalizer - can't find rules for scope 'crawldb', using default
+2016-07-21 09:27:22,111 INFO  regex.RegexURLNormalizer - can't find rules for scope 'crawldb', using default
+2016-07-21 09:27:22,124 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2016-07-21 09:27:22,124 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2016-07-21 09:27:22,124 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2016-07-21 09:27:22,893 INFO  crawl.CrawlDb - CrawlDb update: finished at 2016-07-21 09:27:22, elapsed: 00:00:01
+2016-07-21 09:27:22,896 INFO  crawl.Generator - Generator: starting at 2016-07-21 09:27:22
+2016-07-21 09:27:22,896 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2016-07-21 09:27:22,896 INFO  crawl.Generator - Generator: filtering: true
+2016-07-21 09:27:22,896 INFO  crawl.Generator - Generator: normalizing: true
+2016-07-21 09:27:22,896 INFO  crawl.Generator - Generator: topN: 5
+2016-07-21 09:27:22,896 INFO  crawl.Generator - Generator: jobtracker is 'local', generating exactly one partition.
+2016-07-21 09:27:23,006 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2016-07-21 09:27:23,006 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2016-07-21 09:27:23,006 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2016-07-21 09:27:23,006 INFO  regex.RegexURLNormalizer - can't find rules for scope 'partition', using default
+2016-07-21 09:27:23,051 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2016-07-21 09:27:23,051 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2016-07-21 09:27:23,051 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2016-07-21 09:27:23,052 INFO  regex.RegexURLNormalizer - can't find rules for scope 'generate_host_count', using default
+2016-07-21 09:27:23,939 INFO  crawl.Generator - Generator: Partitioning selected urls for politeness.
+2016-07-21 09:27:24,943 INFO  crawl.Generator - Generator: segment: crawl-20160721092643/segments/20160721092724
+2016-07-21 09:27:25,070 INFO  regex.RegexURLNormalizer - can't find rules for scope 'partition', using default
+2016-07-21 09:27:25,980 INFO  crawl.Generator - Generator: finished at 2016-07-21 09:27:25, elapsed: 00:00:03
+2016-07-21 09:27:25,980 WARN  fetcher.Fetcher - Fetcher: Your 'http.agent.name' value should be listed first in 'http.robots.agents' property.
+2016-07-21 09:27:25,980 INFO  fetcher.Fetcher - Fetcher: starting at 2016-07-21 09:27:25
+2016-07-21 09:27:25,980 INFO  fetcher.Fetcher - Fetcher: segment: crawl-20160721092643/segments/20160721092724
+2016-07-21 09:27:26,033 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:27:26,033 INFO  fetcher.Fetcher - Fetcher: threads: 10
+2016-07-21 09:27:26,033 INFO  fetcher.Fetcher - Fetcher: time-out divisor: 2
+2016-07-21 09:27:26,034 INFO  fetcher.Fetcher - QueueFeeder finished: total 5 records + hit by time limit :0
+2016-07-21 09:27:26,037 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:27:26,038 INFO  fetcher.Fetcher - fetching http://www.huxiu.com/member/1442473.html (queue crawl delay=5000ms)
+2016-07-21 09:27:26,038 ERROR protocol.RobotRulesParser - Agent we advertise (nutch-1.7) not listed first in 'http.robots.agents' property!
+2016-07-21 09:27:26,038 INFO  http.Http - http.proxy.host = null
+2016-07-21 09:27:26,038 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:27:26,038 INFO  http.Http - http.proxy.port = 8080
+2016-07-21 09:27:26,038 INFO  http.Http - http.timeout = 10000
+2016-07-21 09:27:26,038 INFO  http.Http - http.content.limit = 65536
+2016-07-21 09:27:26,038 INFO  http.Http - http.agent = nutch-1.7/Nutch-1.7 (tjtnutchhoho; http://ucooper.com; tangjiutao@gmail.com)
+2016-07-21 09:27:26,038 INFO  http.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2016-07-21 09:27:26,038 INFO  http.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2016-07-21 09:27:26,039 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:27:26,039 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:27:26,040 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:27:26,041 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:27:26,042 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:27:26,042 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:27:26,044 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:27:26,044 INFO  fetcher.Fetcher - Using queue mode : byHost
+2016-07-21 09:27:26,044 INFO  fetcher.Fetcher - Fetcher: throughput threshold: -1
+2016-07-21 09:27:26,044 INFO  fetcher.Fetcher - Fetcher: throughput threshold retries: 5
+2016-07-21 09:27:27,049 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=4
+2016-07-21 09:27:27,049 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:27,049 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:27,049 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:27,049 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:27,049 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:27,049 INFO  fetcher.Fetcher -   nextFetchTime = 1469064451983
+2016-07-21 09:27:27,049 INFO  fetcher.Fetcher -   now           = 1469064447049
+2016-07-21 09:27:27,049 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/member/19.html
+2016-07-21 09:27:27,049 INFO  fetcher.Fetcher -   1. http://www.huxiu.com/member/1493807.html
+2016-07-21 09:27:27,050 INFO  fetcher.Fetcher -   2. http://www.huxiu.com/member/68480.html
+2016-07-21 09:27:27,050 INFO  fetcher.Fetcher -   3. http://www.huxiu.com/member/1400674.html
+2016-07-21 09:27:28,052 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=8, fetchQueues.totalSize=4
+2016-07-21 09:27:28,052 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:28,052 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:28,052 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:28,052 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:28,053 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:28,053 INFO  fetcher.Fetcher -   nextFetchTime = 1469064451983
+2016-07-21 09:27:28,053 INFO  fetcher.Fetcher -   now           = 1469064448053
+2016-07-21 09:27:28,053 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/member/19.html
+2016-07-21 09:27:28,053 INFO  fetcher.Fetcher -   1. http://www.huxiu.com/member/1493807.html
+2016-07-21 09:27:28,053 INFO  fetcher.Fetcher -   2. http://www.huxiu.com/member/68480.html
+2016-07-21 09:27:28,053 INFO  fetcher.Fetcher -   3. http://www.huxiu.com/member/1400674.html
+2016-07-21 09:27:29,056 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=4
+2016-07-21 09:27:29,057 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:29,057 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:29,057 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:29,057 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:29,057 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:29,057 INFO  fetcher.Fetcher -   nextFetchTime = 1469064451983
+2016-07-21 09:27:29,057 INFO  fetcher.Fetcher -   now           = 1469064449057
+2016-07-21 09:27:29,058 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/member/19.html
+2016-07-21 09:27:29,058 INFO  fetcher.Fetcher -   1. http://www.huxiu.com/member/1493807.html
+2016-07-21 09:27:29,058 INFO  fetcher.Fetcher -   2. http://www.huxiu.com/member/68480.html
+2016-07-21 09:27:29,058 INFO  fetcher.Fetcher -   3. http://www.huxiu.com/member/1400674.html
+2016-07-21 09:27:30,060 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=4
+2016-07-21 09:27:30,060 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:30,060 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:30,060 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:30,061 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:30,061 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:30,061 INFO  fetcher.Fetcher -   nextFetchTime = 1469064451983
+2016-07-21 09:27:30,061 INFO  fetcher.Fetcher -   now           = 1469064450061
+2016-07-21 09:27:30,061 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/member/19.html
+2016-07-21 09:27:30,061 INFO  fetcher.Fetcher -   1. http://www.huxiu.com/member/1493807.html
+2016-07-21 09:27:30,061 INFO  fetcher.Fetcher -   2. http://www.huxiu.com/member/68480.html
+2016-07-21 09:27:30,061 INFO  fetcher.Fetcher -   3. http://www.huxiu.com/member/1400674.html
+2016-07-21 09:27:31,066 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=4
+2016-07-21 09:27:31,066 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:31,066 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:31,066 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:31,066 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:31,066 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:31,066 INFO  fetcher.Fetcher -   nextFetchTime = 1469064451983
+2016-07-21 09:27:31,066 INFO  fetcher.Fetcher -   now           = 1469064451066
+2016-07-21 09:27:31,067 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/member/19.html
+2016-07-21 09:27:31,067 INFO  fetcher.Fetcher -   1. http://www.huxiu.com/member/1493807.html
+2016-07-21 09:27:31,067 INFO  fetcher.Fetcher -   2. http://www.huxiu.com/member/68480.html
+2016-07-21 09:27:31,067 INFO  fetcher.Fetcher -   3. http://www.huxiu.com/member/1400674.html
+2016-07-21 09:27:32,003 INFO  fetcher.Fetcher - fetching http://www.huxiu.com/member/19.html (queue crawl delay=5000ms)
+2016-07-21 09:27:32,070 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=3
+2016-07-21 09:27:32,070 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:32,070 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:32,070 INFO  fetcher.Fetcher -   inProgress    = 1
+2016-07-21 09:27:32,070 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:32,070 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:32,070 INFO  fetcher.Fetcher -   nextFetchTime = 1469064451983
+2016-07-21 09:27:32,070 INFO  fetcher.Fetcher -   now           = 1469064452070
+2016-07-21 09:27:32,070 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/member/1493807.html
+2016-07-21 09:27:32,070 INFO  fetcher.Fetcher -   1. http://www.huxiu.com/member/68480.html
+2016-07-21 09:27:32,071 INFO  fetcher.Fetcher -   2. http://www.huxiu.com/member/1400674.html
+2016-07-21 09:27:33,075 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=3
+2016-07-21 09:27:33,076 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:33,076 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:33,076 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:33,076 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:33,076 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:33,076 INFO  fetcher.Fetcher -   nextFetchTime = 1469064457563
+2016-07-21 09:27:33,076 INFO  fetcher.Fetcher -   now           = 1469064453076
+2016-07-21 09:27:33,076 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/member/1493807.html
+2016-07-21 09:27:33,076 INFO  fetcher.Fetcher -   1. http://www.huxiu.com/member/68480.html
+2016-07-21 09:27:33,076 INFO  fetcher.Fetcher -   2. http://www.huxiu.com/member/1400674.html
+2016-07-21 09:27:34,078 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=3
+2016-07-21 09:27:34,078 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:34,078 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:34,078 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:34,078 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:34,078 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:34,078 INFO  fetcher.Fetcher -   nextFetchTime = 1469064457563
+2016-07-21 09:27:34,078 INFO  fetcher.Fetcher -   now           = 1469064454078
+2016-07-21 09:27:34,078 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/member/1493807.html
+2016-07-21 09:27:34,079 INFO  fetcher.Fetcher -   1. http://www.huxiu.com/member/68480.html
+2016-07-21 09:27:34,079 INFO  fetcher.Fetcher -   2. http://www.huxiu.com/member/1400674.html
+2016-07-21 09:27:35,081 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=3
+2016-07-21 09:27:35,081 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:35,081 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:35,081 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:35,081 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:35,081 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:35,081 INFO  fetcher.Fetcher -   nextFetchTime = 1469064457563
+2016-07-21 09:27:35,081 INFO  fetcher.Fetcher -   now           = 1469064455081
+2016-07-21 09:27:35,082 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/member/1493807.html
+2016-07-21 09:27:35,082 INFO  fetcher.Fetcher -   1. http://www.huxiu.com/member/68480.html
+2016-07-21 09:27:35,082 INFO  fetcher.Fetcher -   2. http://www.huxiu.com/member/1400674.html
+2016-07-21 09:27:36,085 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=3
+2016-07-21 09:27:36,085 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:36,086 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:36,086 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:36,086 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:36,086 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:36,086 INFO  fetcher.Fetcher -   nextFetchTime = 1469064457563
+2016-07-21 09:27:36,086 INFO  fetcher.Fetcher -   now           = 1469064456086
+2016-07-21 09:27:36,086 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/member/1493807.html
+2016-07-21 09:27:36,086 INFO  fetcher.Fetcher -   1. http://www.huxiu.com/member/68480.html
+2016-07-21 09:27:36,086 INFO  fetcher.Fetcher -   2. http://www.huxiu.com/member/1400674.html
+2016-07-21 09:27:37,091 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=3
+2016-07-21 09:27:37,092 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:37,092 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:37,092 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:37,092 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:37,092 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:37,092 INFO  fetcher.Fetcher -   nextFetchTime = 1469064457563
+2016-07-21 09:27:37,093 INFO  fetcher.Fetcher -   now           = 1469064457093
+2016-07-21 09:27:37,093 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/member/1493807.html
+2016-07-21 09:27:37,093 INFO  fetcher.Fetcher -   1. http://www.huxiu.com/member/68480.html
+2016-07-21 09:27:37,093 INFO  fetcher.Fetcher -   2. http://www.huxiu.com/member/1400674.html
+2016-07-21 09:27:37,594 INFO  fetcher.Fetcher - fetching http://www.huxiu.com/member/1493807.html (queue crawl delay=5000ms)
+2016-07-21 09:27:38,095 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=2
+2016-07-21 09:27:38,096 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:38,096 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:38,096 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:38,096 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:38,096 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:38,096 INFO  fetcher.Fetcher -   nextFetchTime = 1469064463093
+2016-07-21 09:27:38,096 INFO  fetcher.Fetcher -   now           = 1469064458096
+2016-07-21 09:27:38,096 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/member/68480.html
+2016-07-21 09:27:38,096 INFO  fetcher.Fetcher -   1. http://www.huxiu.com/member/1400674.html
+2016-07-21 09:27:39,100 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=2
+2016-07-21 09:27:39,100 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:39,100 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:39,100 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:39,100 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:39,100 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:39,100 INFO  fetcher.Fetcher -   nextFetchTime = 1469064463093
+2016-07-21 09:27:39,100 INFO  fetcher.Fetcher -   now           = 1469064459100
+2016-07-21 09:27:39,100 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/member/68480.html
+2016-07-21 09:27:39,100 INFO  fetcher.Fetcher -   1. http://www.huxiu.com/member/1400674.html
+2016-07-21 09:27:40,106 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=2
+2016-07-21 09:27:40,106 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:40,106 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:40,106 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:40,106 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:40,107 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:40,107 INFO  fetcher.Fetcher -   nextFetchTime = 1469064463093
+2016-07-21 09:27:40,108 INFO  fetcher.Fetcher -   now           = 1469064460108
+2016-07-21 09:27:40,108 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/member/68480.html
+2016-07-21 09:27:40,108 INFO  fetcher.Fetcher -   1. http://www.huxiu.com/member/1400674.html
+2016-07-21 09:27:41,112 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=2
+2016-07-21 09:27:41,112 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:41,112 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:41,112 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:41,112 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:41,112 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:41,112 INFO  fetcher.Fetcher -   nextFetchTime = 1469064463093
+2016-07-21 09:27:41,112 INFO  fetcher.Fetcher -   now           = 1469064461112
+2016-07-21 09:27:41,113 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/member/68480.html
+2016-07-21 09:27:41,113 INFO  fetcher.Fetcher -   1. http://www.huxiu.com/member/1400674.html
+2016-07-21 09:27:42,118 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=2
+2016-07-21 09:27:42,118 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:42,118 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:42,118 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:42,118 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:42,119 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:42,119 INFO  fetcher.Fetcher -   nextFetchTime = 1469064463093
+2016-07-21 09:27:42,119 INFO  fetcher.Fetcher -   now           = 1469064462119
+2016-07-21 09:27:42,119 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/member/68480.html
+2016-07-21 09:27:42,119 INFO  fetcher.Fetcher -   1. http://www.huxiu.com/member/1400674.html
+2016-07-21 09:27:43,120 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=2
+2016-07-21 09:27:43,120 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:43,120 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:43,120 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:43,120 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:43,120 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:43,121 INFO  fetcher.Fetcher -   nextFetchTime = 1469064463093
+2016-07-21 09:27:43,121 INFO  fetcher.Fetcher -   now           = 1469064463121
+2016-07-21 09:27:43,121 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/member/68480.html
+2016-07-21 09:27:43,121 INFO  fetcher.Fetcher -   1. http://www.huxiu.com/member/1400674.html
+2016-07-21 09:27:43,127 INFO  fetcher.Fetcher - fetching http://www.huxiu.com/member/68480.html (queue crawl delay=5000ms)
+2016-07-21 09:27:44,123 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=1
+2016-07-21 09:27:44,124 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:44,124 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:44,124 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:44,124 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:44,124 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:44,124 INFO  fetcher.Fetcher -   nextFetchTime = 1469064468554
+2016-07-21 09:27:44,124 INFO  fetcher.Fetcher -   now           = 1469064464124
+2016-07-21 09:27:44,124 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/member/1400674.html
+2016-07-21 09:27:45,129 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=1
+2016-07-21 09:27:45,129 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:45,129 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:45,130 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:45,130 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:45,130 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:45,130 INFO  fetcher.Fetcher -   nextFetchTime = 1469064468554
+2016-07-21 09:27:45,130 INFO  fetcher.Fetcher -   now           = 1469064465130
+2016-07-21 09:27:45,130 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/member/1400674.html
+2016-07-21 09:27:46,134 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=1
+2016-07-21 09:27:46,134 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:46,134 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:46,134 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:46,134 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:46,134 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:46,134 INFO  fetcher.Fetcher -   nextFetchTime = 1469064468554
+2016-07-21 09:27:46,134 INFO  fetcher.Fetcher -   now           = 1469064466134
+2016-07-21 09:27:46,134 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/member/1400674.html
+2016-07-21 09:27:47,139 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=1
+2016-07-21 09:27:47,139 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:47,140 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:47,140 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:47,140 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:47,140 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:47,140 INFO  fetcher.Fetcher -   nextFetchTime = 1469064468554
+2016-07-21 09:27:47,140 INFO  fetcher.Fetcher -   now           = 1469064467140
+2016-07-21 09:27:47,140 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/member/1400674.html
+2016-07-21 09:27:48,145 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=1
+2016-07-21 09:27:48,146 INFO  fetcher.Fetcher - * queue: http://www.huxiu.com
+2016-07-21 09:27:48,146 INFO  fetcher.Fetcher -   maxThreads    = 1
+2016-07-21 09:27:48,146 INFO  fetcher.Fetcher -   inProgress    = 0
+2016-07-21 09:27:48,146 INFO  fetcher.Fetcher -   crawlDelay    = 5000
+2016-07-21 09:27:48,146 INFO  fetcher.Fetcher -   minCrawlDelay = 0
+2016-07-21 09:27:48,146 INFO  fetcher.Fetcher -   nextFetchTime = 1469064468554
+2016-07-21 09:27:48,146 INFO  fetcher.Fetcher -   now           = 1469064468146
+2016-07-21 09:27:48,146 INFO  fetcher.Fetcher -   0. http://www.huxiu.com/member/1400674.html
+2016-07-21 09:27:48,588 INFO  fetcher.Fetcher - fetching http://www.huxiu.com/member/1400674.html (queue crawl delay=5000ms)
+2016-07-21 09:27:48,667 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=8
+2016-07-21 09:27:48,667 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=8
+2016-07-21 09:27:48,667 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=5
+2016-07-21 09:27:48,667 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=6
+2016-07-21 09:27:48,667 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=2
+2016-07-21 09:27:48,667 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=3
+2016-07-21 09:27:48,667 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=7
+2016-07-21 09:27:48,667 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=4
+2016-07-21 09:27:48,683 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2016-07-21 09:27:49,146 INFO  fetcher.Fetcher - -activeThreads=1, spinWaiting=0, fetchQueues.totalSize=0
+2016-07-21 09:27:49,861 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=0
+2016-07-21 09:27:50,148 INFO  fetcher.Fetcher - -activeThreads=0, spinWaiting=0, fetchQueues.totalSize=0
+2016-07-21 09:27:50,148 INFO  fetcher.Fetcher - -activeThreads=0
+2016-07-21 09:27:51,094 INFO  fetcher.Fetcher - Fetcher: finished at 2016-07-21 09:27:51, elapsed: 00:00:25
+2016-07-21 09:27:51,094 INFO  parse.ParseSegment - ParseSegment: starting at 2016-07-21 09:27:51
+2016-07-21 09:27:51,094 INFO  parse.ParseSegment - ParseSegment: segment: crawl-20160721092643/segments/20160721092724
+2016-07-21 09:27:51,220 INFO  crawl.SignatureFactory - Using Signature impl: org.apache.nutch.crawl.MD5Signature
+2016-07-21 09:27:51,222 INFO  parse.ParseSegment - Parsed (3ms):http://www.huxiu.com/member/1400674.html
+2016-07-21 09:27:51,250 INFO  parse.ParseSegment - Parsed (2ms):http://www.huxiu.com/member/1442473.html
+2016-07-21 09:27:51,277 INFO  parse.ParseSegment - Parsed (2ms):http://www.huxiu.com/member/1493807.html
+2016-07-21 09:27:51,302 INFO  parse.ParseSegment - Parsed (3ms):http://www.huxiu.com/member/19.html
+2016-07-21 09:27:51,330 INFO  parse.ParseSegment - Parsed (3ms):http://www.huxiu.com/member/68480.html
+2016-07-21 09:27:51,356 INFO  regex.RegexURLNormalizer - can't find rules for scope 'outlink', using default
+2016-07-21 09:27:52,150 INFO  parse.ParseSegment - ParseSegment: finished at 2016-07-21 09:27:52, elapsed: 00:00:01
+2016-07-21 09:27:52,153 INFO  crawl.CrawlDb - CrawlDb update: starting at 2016-07-21 09:27:52
+2016-07-21 09:27:52,153 INFO  crawl.CrawlDb - CrawlDb update: db: crawl-20160721092643/crawldb
+2016-07-21 09:27:52,153 INFO  crawl.CrawlDb - CrawlDb update: segments: [crawl-20160721092643/segments/20160721092724]
+2016-07-21 09:27:52,153 INFO  crawl.CrawlDb - CrawlDb update: additions allowed: true
+2016-07-21 09:27:52,153 INFO  crawl.CrawlDb - CrawlDb update: URL normalizing: true
+2016-07-21 09:27:52,153 INFO  crawl.CrawlDb - CrawlDb update: URL filtering: true
+2016-07-21 09:27:52,153 INFO  crawl.CrawlDb - CrawlDb update: 404 purging: false
+2016-07-21 09:27:52,154 INFO  crawl.CrawlDb - CrawlDb update: Merging segment data into db.
+2016-07-21 09:27:52,221 INFO  regex.RegexURLNormalizer - can't find rules for scope 'crawldb', using default
+2016-07-21 09:27:52,313 INFO  regex.RegexURLNormalizer - can't find rules for scope 'crawldb', using default
+2016-07-21 09:27:52,396 INFO  regex.RegexURLNormalizer - can't find rules for scope 'crawldb', using default
+2016-07-21 09:27:52,407 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2016-07-21 09:27:52,407 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2016-07-21 09:27:52,407 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2016-07-21 09:27:53,197 INFO  crawl.CrawlDb - CrawlDb update: finished at 2016-07-21 09:27:53, elapsed: 00:00:01
+2016-07-21 09:27:53,204 INFO  crawl.LinkDb - LinkDb: starting at 2016-07-21 09:27:53
+2016-07-21 09:27:53,204 INFO  crawl.LinkDb - LinkDb: linkdb: crawl-20160721092643/linkdb
+2016-07-21 09:27:53,204 INFO  crawl.LinkDb - LinkDb: URL normalize: true
+2016-07-21 09:27:53,205 INFO  crawl.LinkDb - LinkDb: URL filter: true
+2016-07-21 09:27:53,205 INFO  crawl.LinkDb - LinkDb: internal links will be ignored.
+2016-07-21 09:27:53,205 INFO  crawl.LinkDb - LinkDb: adding segment: file:/Users/achiver/dev/apache-nutch-1.7/crawl-20160721092643/segments/20160721092649
+2016-07-21 09:27:53,205 INFO  crawl.LinkDb - LinkDb: adding segment: file:/Users/achiver/dev/apache-nutch-1.7/crawl-20160721092643/segments/20160721092657
+2016-07-21 09:27:53,205 INFO  crawl.LinkDb - LinkDb: adding segment: file:/Users/achiver/dev/apache-nutch-1.7/crawl-20160721092643/segments/20160721092724
+2016-07-21 09:27:53,316 INFO  regex.RegexURLNormalizer - can't find rules for scope 'linkdb', using default
+2016-07-21 09:27:53,387 INFO  regex.RegexURLNormalizer - can't find rules for scope 'linkdb', using default
+2016-07-21 09:27:53,451 INFO  regex.RegexURLNormalizer - can't find rules for scope 'linkdb', using default
+2016-07-21 09:27:54,305 INFO  crawl.LinkDb - LinkDb: finished at 2016-07-21 09:27:54, elapsed: 00:00:01
+2016-07-21 09:27:54,307 INFO  indexer.IndexingJob - Indexer: starting at 2016-07-21 09:27:54
+2016-07-21 09:27:54,308 INFO  indexer.IndexingJob - Indexer: deleting gone documents: false
+2016-07-21 09:27:54,308 INFO  indexer.IndexingJob - Indexer: URL filtering: false
+2016-07-21 09:27:54,308 INFO  indexer.IndexingJob - Indexer: URL normalizing: false
+2016-07-21 09:27:54,318 INFO  indexer.IndexWriters - Adding org.apache.nutch.indexwriter.solr.SolrIndexWriter
+2016-07-21 09:27:54,318 INFO  indexer.IndexingJob - Active IndexWriters :
+SOLRIndexWriter
+	solr.server.url : URL of the SOLR instance (mandatory)
+	solr.commit.size : buffer size when sending to SOLR (default 1000)
+	solr.mapping.file : name of the mapping file for fields (default solrindex-mapping.xml)
+	solr.auth : use authentication (default false)
+	solr.auth.username : use authentication (default false)
+	solr.auth : username for authentication
+	solr.auth.password : password for authentication
+
+
+2016-07-21 09:27:54,321 INFO  indexer.IndexerMapReduce - IndexerMapReduce: crawldb: crawl-20160721092643/crawldb
+2016-07-21 09:27:54,321 INFO  indexer.IndexerMapReduce - IndexerMapReduce: linkdb: crawl-20160721092643/linkdb
+2016-07-21 09:27:54,321 INFO  indexer.IndexerMapReduce - IndexerMapReduces: adding segment: file:/Users/achiver/dev/apache-nutch-1.7/crawl-20160721092643/segments/20160721092649
+2016-07-21 09:27:54,321 INFO  indexer.IndexerMapReduce - IndexerMapReduces: adding segment: file:/Users/achiver/dev/apache-nutch-1.7/crawl-20160721092643/segments/20160721092657
+2016-07-21 09:27:54,322 INFO  indexer.IndexerMapReduce - IndexerMapReduces: adding segment: file:/Users/achiver/dev/apache-nutch-1.7/crawl-20160721092643/segments/20160721092724
+2016-07-21 09:27:54,414 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2016-07-21 09:27:54,416 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2016-07-21 09:27:54,416 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2016-07-21 09:27:54,463 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2016-07-21 09:27:54,463 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2016-07-21 09:27:54,463 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2016-07-21 09:27:54,573 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2016-07-21 09:27:54,573 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2016-07-21 09:27:54,573 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2016-07-21 09:27:54,620 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2016-07-21 09:27:54,620 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2016-07-21 09:27:54,620 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2016-07-21 09:27:54,671 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2016-07-21 09:27:54,671 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2016-07-21 09:27:54,671 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2016-07-21 09:27:54,711 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2016-07-21 09:27:54,711 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2016-07-21 09:27:54,711 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2016-07-21 09:27:54,755 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2016-07-21 09:27:54,755 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2016-07-21 09:27:54,755 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2016-07-21 09:27:54,784 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2016-07-21 09:27:54,784 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2016-07-21 09:27:54,784 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2016-07-21 09:27:54,832 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2016-07-21 09:27:54,832 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2016-07-21 09:27:54,832 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2016-07-21 09:27:54,857 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2016-07-21 09:27:54,857 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2016-07-21 09:27:54,857 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2016-07-21 09:27:54,880 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2016-07-21 09:27:54,880 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2016-07-21 09:27:54,880 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2016-07-21 09:27:54,903 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2016-07-21 09:27:54,903 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2016-07-21 09:27:54,903 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2016-07-21 09:27:54,931 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2016-07-21 09:27:54,931 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2016-07-21 09:27:54,931 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2016-07-21 09:27:54,953 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2016-07-21 09:27:54,953 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2016-07-21 09:27:54,953 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2016-07-21 09:27:54,989 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2016-07-21 09:27:54,989 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2016-07-21 09:27:54,989 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2016-07-21 09:27:54,990 INFO  indexer.IndexWriters - Adding org.apache.nutch.indexwriter.solr.SolrIndexWriter
+2016-07-21 09:27:55,038 INFO  solr.SolrMappingReader - source: content dest: content
+2016-07-21 09:27:55,038 INFO  solr.SolrMappingReader - source: title dest: title
+2016-07-21 09:27:55,038 INFO  solr.SolrMappingReader - source: host dest: host
+2016-07-21 09:27:55,038 INFO  solr.SolrMappingReader - source: segment dest: segment
+2016-07-21 09:27:55,038 INFO  solr.SolrMappingReader - source: boost dest: boost
+2016-07-21 09:27:55,038 INFO  solr.SolrMappingReader - source: digest dest: digest
+2016-07-21 09:27:55,038 INFO  solr.SolrMappingReader - source: tstamp dest: tstamp
+2016-07-21 09:27:55,038 INFO  solr.SolrMappingReader - source: url dest: id
+2016-07-21 09:27:55,038 INFO  solr.SolrMappingReader - source: url dest: url
+2016-07-21 09:27:55,089 INFO  solr.SolrIndexWriter - Indexing 10 documents
+2016-07-21 09:27:55,365 INFO  solr.SolrIndexWriter - Indexing 10 documents
+2016-07-21 09:27:55,382 WARN  mapred.LocalJobRunner - job_local1350498288_0019
+org.apache.solr.common.SolrException: Bad Request
+
+Bad Request
+
+request: http://127.0.0.1:8082/solr/core1/update?wt=javabin&version=2
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:430)
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:244)
+	at org.apache.solr.client.solrj.request.AbstractUpdateRequest.process(AbstractUpdateRequest.java:105)
+	at org.apache.nutch.indexwriter.solr.SolrIndexWriter.close(SolrIndexWriter.java:155)
+	at org.apache.nutch.indexer.IndexWriters.close(IndexWriters.java:118)
+	at org.apache.nutch.indexer.IndexerOutputFormat$1.close(IndexerOutputFormat.java:44)
+	at org.apache.hadoop.mapred.ReduceTask$OldTrackingRecordWriter.close(ReduceTask.java:467)
+	at org.apache.hadoop.mapred.ReduceTask.runOldReducer(ReduceTask.java:535)
+	at org.apache.hadoop.mapred.ReduceTask.run(ReduceTask.java:421)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:398)
